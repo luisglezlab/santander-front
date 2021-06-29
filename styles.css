@@ -102,7 +102,7 @@ a:hover{
 }
 
 .icon{
-    width: 20px;
+    width: 1.25rem;
 }
 
 /* ------ Header ------ */
@@ -182,6 +182,7 @@ a:hover{
     flex-direction: column;
     width: 100%;
     max-width: var(--article-max);
+    text-align:center;
 }
 
 .section-welcome article p:first-of-type{
@@ -195,11 +196,14 @@ a:hover{
 }
 
 .section-welcome article > form input{
-    width:250px;
+    width:60%;
+    max-width:250px;
     border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
 .section-welcome article > form button{
+    width:40%;
+    max-width:250px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
@@ -223,7 +227,7 @@ a:hover{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .section-video article:first-child{
@@ -240,7 +244,7 @@ a:hover{
 
 .section-video img {
     width: 120px;
-    margin-top: 10px;
+    margin: 20px;
 }
 
 .section-video article > form{
@@ -250,11 +254,14 @@ a:hover{
 }
 
 .section-video article > form input{
-    width:250px;
+    width:60%;
+    max-width:250px;
     border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
 .section-video article > form button{
+    width:40%;
+    max-width:250px;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
@@ -288,7 +295,7 @@ a:hover{
 }
 
 .text-card img{
-    width:50px;
+    width:3.125rem;
     margin:5px 0;
 }
 
@@ -320,7 +327,7 @@ a:hover{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 20px;
     padding:0 5%;
 }
 
@@ -464,7 +471,7 @@ a:hover{
 
 .section-howWorks article:nth-child(2) .img-card .icon{
     position: relative;
-    height: 20px;
+    height: 1.25rem;
     top: -140px;
     left: 20px;
 }
@@ -497,4 +504,78 @@ a:hover{
 .section-howWorks article:nth-child(2) .text-card p{
     margin:20px 0;
     min-height: 110px;
+}
+
+@media (max-width: 575px){
+
+    .navbar, .actions{
+        display: none;
+    }
+
+    *{
+        font-size: 14px;
+    }
+    
+    .f-60{font-size:2.5rem}
+    .f-50{font-size:2.25rem}
+    .f-40{font-size:2rem}
+    .f-30{font-size:1.5rem}
+
+    section{
+        padding:50px 10px;
+        flex-direction: column;
+    }
+    
+    .section-welcome{
+        padding-top:100px;
+    }
+
+    .section-video article{
+        width:100%;
+    }
+
+    .section-video article > form{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-cards > article{
+        grid-template: auto / 1fr ;
+    }
+    
+    .section-brands article:first-child{
+        width:100%;
+    }
+
+    .section-brands article:first-child img{
+        margin:10px 10px 40px 10px;
+    }
+
+    .section-brands article:nth-child(2){
+        width:100%;
+    }
+
+    .section-howWorks article:nth-child(2){
+        grid-template: auto auto auto auto / 1fr;
+    }
+
+    .section-howWorks article:nth-child(2) .text-card p{
+        min-height: 40px;
+    }
+
+    .section-howWorks article:nth-child(2) .img-card{
+        background-size: contain;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px){
+
+}
+
+@media (min-width: 768px) and (max-width:1199px){
+
+}
+
+@media (min-width: 1200px){
+
 }
