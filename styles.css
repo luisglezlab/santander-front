@@ -351,7 +351,7 @@ a:hover{
 }
 
 
-.section-brands article .carousel-img{
+/* .section-brands article .carousel-img{
     width:100%;
     height:230px;
     background-image: url('https://getmatcha.com/wp-content/uploads/2019/08/0.jpg');
@@ -360,7 +360,7 @@ a:hover{
     background-position: center center;
     border: 1px solid var(--light);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
+} */
 
 .section-brands article .carousel-img .carousel-circle{
     width:100px;
@@ -508,10 +508,6 @@ a:hover{
 
 @media (max-width: 575px){
 
-    .navbar, .actions{
-        display: none;
-    }
-
     *{
         font-size: 14px;
     }
@@ -578,4 +574,30 @@ a:hover{
 
 @media (min-width: 1200px){
 
+}
+
+/* ESTILOS POST BOOTSTRP, ACTUALIZAR A CÓDIGO LIMPIO DESPUÉS */
+
+.card{
+    overflow:hidden;
+}
+
+.carousel-indicators{
+    bottom:-45px;
+}
+
+.section-brands article .carousel-img{
+    width:100%;
+    height:300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section-brands article .carousel-img:nth-child(1){
+    background-image: url('https://getmatcha.com/wp-content/uploads/2019/08/0.jpg');
+}
+
+.section-brands article .carousel-img:nth-child(2){
+    background-image: url('https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png');
 }
